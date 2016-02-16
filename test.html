@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+</head>
+<body>
+	<button id="alg-1">快速排序</button>
+	<button id="alg-2">并归排序</button>
+	<button id="alg-3">加千位符</button>
+	<button id="in-3">面试题3</button>
+	<button id="in-4">面试题4</button>
+	<button id="in-5-1">面试题5(栈)</button>
+	<button id="in-5-2">面试题5(递归)</button>
+	<button id="in-6">面试题6</button>
+	<button id="in-7-1">面试题7(俩栈模拟队列)</button>
+	<button id="in-7-2">面试题7(俩队列模拟栈)</button>
+	<button id="in-8">面试题8</button>
+	<button id="in-9-1">面试题9(递归加缓存斐波那契)</button>
+	<button id="in-9-2">面试题9(循环斐波那契)</button>
+	<button id="in-10">面试题10</button>
+	<button id="in-11">面试题11</button>
+	<button id="in-12">面试题12(大数，全排列)</button>
+	<button id="in-13">面试题13</button>
+	<button id="in-14">面试题14</button>
+	<button id="in-15">面试题15</button>
+	<button id="in-16">面试题16</button>
+	<button id="in-17">面试题17</button>
+	<button id="in-18">面试题18</button>
+	<button id="in-19">面试题19</button>
+	<button id="in-20">面试题20</button>
+	<button id="in-21">面试题21</button>
+	<button id="in-22">面试题22</button>
+	<button id="in-23">面试题23</button>
+	<button id="in-24">面试题24</button>
+	<button id="in-25">面试题25</button>
+	<button id="in-26">面试题26</button>
+	<button id="in-27">面试题27</button>
+	<button id="in-28">面试题28(全排列)</button>
+	<button id="in-29-1">面试题29(partition)</button>
+	<button id="in-29-2">面试题29(计数)</button>
+	<button id="in-30">面试题30</button>
+	<button id="in-31">面试题31</button>
+	<button id="in-32">面试题32</button>
+	<button id="in-33">面试题33</button>
+	<button id="in-34">面试题34</button>
+	<button id="in-35">面试题35</button>
+	<button id="in-36">面试题36</button>
+	<button id="in-37">面试题37</button>
+	<button id="in-38">面试题38</button>
+	<button id="in-39">面试题39</button>
+	<button id="in-40">面试题40</button>
+	<button id="in-41">面试题41</button>
+	<button id="in-42">面试题42</button>
+	<button id="in-43">面试题43</button>
+	<button id="in-44">面试题44</button>
+	<button id="in-45">面试题45</button>
+	<script type="text/javascript" src="algorithms.js"></script>
+	<script type="text/javascript" src="data-structure.js"></script>
+	<script type="text/javascript" src="interview-3.js"></script>
+	<script type="text/javascript" src="interview-4.js"></script>
+	<script type="text/javascript" src="interview-5.js"></script>
+	<script type="text/javascript" src="interview-6.js"></script>
+	<script type="text/javascript" src="interview-7.js"></script>
+	<script type="text/javascript" src="interview-8.js"></script>
+	<script type="text/javascript" src="interview-9.js"></script>
+	<script type="text/javascript" src="interview-10.js"></script>
+	<script type="text/javascript" src="interview-11.js"></script>
+	<script type="text/javascript" src="interview-12.js"></script>
+	<script type="text/javascript" src="interview-13.js"></script>
+	<script type="text/javascript" src="interview-14.js"></script>
+	<script type="text/javascript" src="interview-15.js"></script>
+	<script type="text/javascript" src="interview-16.js"></script>
+	<script type="text/javascript" src="interview-17.js"></script>
+	<script type="text/javascript" src="interview-18.js"></script>
+	<script type="text/javascript" src="interview-19.js"></script>
+	<script type="text/javascript" src="interview-20.js"></script>
+	<script type="text/javascript" src="interview-21.js"></script>
+	<script type="text/javascript" src="interview-22.js"></script>
+	<script type="text/javascript" src="interview-23.js"></script>
+	<script type="text/javascript" src="interview-24.js"></script>
+	<script type="text/javascript" src="interview-25.js"></script>
+	<script type="text/javascript" src="interview-26.js"></script>
+	<script type="text/javascript" src="interview-27.js"></script>
+	<script type="text/javascript" src="interview-28.js"></script>
+	<script type="text/javascript" src="interview-29.js"></script>
+	<script type="text/javascript" src="interview-30.js"></script>
+	<script type="text/javascript" src="interview-31.js"></script>
+	<script type="text/javascript" src="interview-32.js"></script>
+	<script type="text/javascript" src="interview-33.js"></script>
+	<script type="text/javascript" src="interview-34.js"></script>
+	<script type="text/javascript" src="interview-35.js"></script>
+	<script type="text/javascript" src="interview-36.js"></script>
+	<script type="text/javascript" src="interview-37.js"></script>
+	<script type="text/javascript" src="interview-38.js"></script>
+	<script type="text/javascript" src="interview-39.js"></script>
+	<script type="text/javascript" src="interview-40.js"></script>
+	<script type="text/javascript" src="interview-41.js"></script>
+	<script type="text/javascript" src="interview-42.js"></script>
+	<script type="text/javascript" src="interview-43.js"></script>
+	<script type="text/javascript" src="interview-44.js"></script>
+	<script type="text/javascript" src="interview-45.js"></script>
+	<script type="text/javascript">
+	window.onload = function() {
+		document.querySelector("#alg-1").onclick = function() {
+			console.log(quickSort([6,4,8,5,3,1,9]));
+			console.log(quickSort([0,1,2,3,4,5,6]));
+			console.log(quickSort([6,5,4,3,2,1,0]));
+			console.log(quickSort([51,22,83,46,75,18,68,30]));
+			console.log(quickSort([6]));
+			console.log(quickSort([]));
+		};
+		document.querySelector("#alg-2").onclick = function() {
+			console.log(mergeSort([6,4,8,5,3,1,9]));
+			console.log(mergeSort([0,1,2,3,4,5,6]));
+			console.log(mergeSort([6,5,4,3,2,1,0]));
+			console.log(mergeSort([51,22,83,46,75,18,68,30]));
+			console.log(mergeSort([6]));
+			console.log(mergeSort([]));
+		};
+		document.querySelector("#alg-3").onclick = function() {
+			console.log(addThousandIdentifier(1234567));
+		};
+		document.querySelector("#in-3").onclick = function() {
+			console.log(lookForNum([[1,3,5,6],[2,7,9,10],[4,11,12,13],[8,14,15,16]], 7));
+			console.log(lookForNum([], 7));
+			console.log(lookForNum([[1,3,5],[2,7,9,10],[4,11,12,13],[8,14,15,16]], 7));
+			console.log(lookForNum([[1,3,5,6],[2,7,9,10],[4,11,12,13],[8,14,15,16]], 17));
+			console.log(lookForNum([[1,3,5,6],[2,7,9,10],[4,11,12,13],[8,14,15,16]], 8));
+			console.log(lookForNum([[1,3,5,6],[2,7,9,10],[4,11,12,13],[8,14,15,16]], 6));
+		};
+		document.querySelector("#in-4").onclick = function() {
+			console.log(replaceSpace("we are happy"));
+			console.log(replaceSpace("wearehappy"));
+			console.log(replaceSpace(" we are happy "));
+			console.log(replaceSpace(""));
+			console.log(replaceSpace(" "));
+			console.log(replaceSpace("  "));
+		};
+		document.querySelector("#in-5-1").onclick = function() {
+			var linkedList = new LinkedList_5_1(),
+				first = new LinkedNode("1"),
+				second = new LinkedNode("2"),
+				third = new LinkedNode("3");
+			first.next = second;
+			second.next = third;
+			linkedList.head = first;
+			linkedList.printFromTail();
+		};
+		document.querySelector("#in-5-2").onclick = function() {
+			var linkedList = new LinkedList_5_2(),
+				first = new LinkedNode("1"),
+				second = new LinkedNode("2"),
+				third = new LinkedNode("3");
+			first.next = second;
+			second.next = third;
+			linkedList.head = first;
+			linkedList.printFromTail(linkedList.head);
+		};
+		document.querySelector("#in-6").onclick = function() {
+			console.log("1:");
+			rebuildBT([1,2,4,7,3,5,6,8], [4,7,2,1,5,3,8,6]);
+			console.log("2:");
+			rebuildBT([1], [1]);
+			console.log("3:");
+			rebuildBT([1,2], [1]);
+		};
+		document.querySelector("#in-7-1").onclick = function() {
+			var queue = new QueueByStack();
+			queue.appendTail(1);
+			queue.appendTail(2);
+			queue.appendTail(3);
+			queue.appendTail(4);
+			console.log(queue.deleteHead());
+			console.log(queue.deleteHead());
+			console.log(queue.deleteHead());
+			console.log(queue.deleteHead());
+			queue.appendTail(5);
+			console.log(queue.deleteHead());
+			console.log(queue.deleteHead());
+		};
+		document.querySelector("#in-7-2").onclick = function() {
+			var stack = new StackByQueue();
+			stack.push(1);
+			stack.push(2);
+			stack.push(3);
+			stack.push(4);
+			console.log(stack.pop());
+			console.log(stack.pop());
+			console.log(stack.pop());
+			console.log(stack.pop());
+			stack.push(5);
+			console.log(stack.pop());
+			console.log(stack.pop());
+		};
+		document.querySelector("#in-8").onclick = function() {
+			console.log(minInSpinArr([3,4,5,1,2]));
+			console.log(minInSpinArr([1,2,3,4,5]));
+			console.log(minInSpinArr([1,0,1,1,1]));
+			console.log(minInSpinArr([1,1,1,0,1]));
+			console.log(minInSpinArr([1]));
+			console.log(minInSpinArr([3,3,3,1,2]));
+			console.log(minInSpinArr([3,3,3,3,3]));
+			console.log(minInSpinArr([]));
+		};
+		document.querySelector("#in-9-1").onclick = function() {
+			var start = new Date(),
+				end;
+			console.log(fib_recursive(100));
+			end = new Date();
+			console.log("用时：" + (end - start) + "ms");
+			console.log(fib_recursive(0));
+			console.log(fib_recursive(1));
+			console.log(fib_recursive(2));
+		};
+		document.querySelector("#in-9-2").onclick = function() {
+			var start = new Date(),
+				end;
+			console.log(fib_traverse(100));
+			end = new Date();
+			console.log("用时：" + (end - start) + "ms");
+			console.log(fib_traverse(0));
+			console.log(fib_traverse(1));
+			console.log(fib_traverse(2));
+		};
+		document.querySelector("#in-10").onclick = function() {
+			console.log(numOf1Inbin(9));
+			console.log(numOf1Inbin(-1));
+			console.log(numOf1Inbin(-8));
+			console.log(numOf1Inbin(0.5));
+		};
+		document.querySelector("#in-11").onclick = function() {
+			console.log(exponent(2, 3));
+			console.log(exponent(2, -3));
+			console.log(exponent(0, 3));
+			console.log(exponent(-2, 3));
+			console.log(exponent(0, 0));
+			console.log(exponent(0, 3.5));
+			console.log(exponent(0.5, 3));
+			console.log(exponent(2, 0));
+			console.log(exponent(-2, 0));
+		};
+		document.querySelector("#in-12").onclick = function() {
+			printToLargest(3);
+			printToLargest(2);
+			printToLargest(4);
+			printToLargest(0);
+			printToLargest(3.5);
+		};
+		document.querySelector("#in-13").onclick = function() {
+			console.log("坑，不能直接在函数里设置一个传入的对象为null，只能设置对象的属性。因此只能传入list对象而不是他的head来实现");
+			var list = new LinkedList(),
+				list2 = new LinkedList(),
+				node1 = new LinkedNode(1),
+				node2 = new LinkedNode(2),
+				node3 = new LinkedNode(3),
+				node4 = new LinkedNode(4);
+			list.head = node1;
+			node1.next = node2;
+			node2.next = node3;
+			list.print();
+			list2.head = node4;
+			list2.print();
+
+			deleteNode(list, node1);
+			list.print();
+			// deleteNode(list, node3);
+			// list.print();
+			// deleteNode(list, node2);
+			// list.print();
+			deleteNode(list2, node4);
+			list2.print();
+		};
+		document.querySelector("#in-14").onclick = function() {
+			var isOdd = function(num) {
+				return num % 2 === 1 || num % 2 === -1;
+			};
+			console.log(reOrderArray([1,2,3,4,5], isOdd));
+			console.log(reOrderArray([2,4,1,3,5], isOdd));
+			console.log(reOrderArray([1,5,3,4,2], isOdd));
+			console.log(reOrderArray([2,1], isOdd));
+			console.log(reOrderArray([1], isOdd));
+			console.log(reOrderArray([2], isOdd));
+			console.log(reOrderArray([], isOdd));
+			console.log(reOrderArray(1, isOdd));
+			console.log(reOrderArray([-1,-2,-3,-4,-5], isOdd));
+			console.log(reOrderArray([-1], isOdd));
+		};
+		document.querySelector("#in-15").onclick = function() {
+			var list = new LinkedList(),
+				node1 = new LinkedNode(1),
+				node2 = new LinkedNode(2),
+				node3 = new LinkedNode(3),
+				node4 = new LinkedNode(4),
+				node5 = new LinkedNode(5),
+				node6 = new LinkedNode(6);
+			list.head = node1;
+			node1.next = node2;
+			node2.next = node3;
+			node3.next = node4;
+			node4.next = node5;
+			node5.next = node6;
+			list.print();
+			console.log("倒数第2个元素为:", getLastKNode(list, 2));
+			console.log("倒数第6个元素为:", getLastKNode(list, 6));
+			console.log("倒数第7个元素为:", getLastKNode(list, 7));
+			console.log("倒数第0个元素为:", getLastKNode(list, 0));
+			var list2 = new LinkedList(),
+				node7 = new LinkedNode(1);
+			list2.head = node7;
+			list2.print();
+			console.log("倒数第1个元素为:", getLastKNode(list2, 1));
+			console.log("倒数第0个元素为:", getLastKNode(list2, 0));
+			console.log("倒数第2个元素为:", getLastKNode(list2, 2));
+		};
+		document.querySelector("#in-16").onclick = function() {
+			var list = new LinkedList(),
+				node1 = new LinkedNode(1),
+				node2 = new LinkedNode(2),
+				node3 = new LinkedNode(3),
+				node4 = new LinkedNode(4),
+				node5 = new LinkedNode(5),
+				node6 = new LinkedNode(6);
+			list.head = node1;
+			node1.next = node2;
+			node2.next = node3;
+			node3.next = node4;
+			node4.next = node5;
+			node5.next = node6;
+			list.print();
+			console.log("颠倒之后的链表为:");
+			reverseList(list).print();
+			var list2 = new LinkedList(),
+				node7 = new LinkedNode(1);
+			list2.head = node7;
+			list2.print();
+			console.log("颠倒之后的链表为:");
+			reverseList(list2).print();
+			var list3 = new LinkedList();
+			list3.print();
+			console.log("颠倒之后的链表为:");
+			reverseList(list3).print();
+		};
+		document.querySelector("#in-17").onclick = function() {
+			var list1 = new LinkedList(),
+				node1 = new LinkedNode(1),
+				node2 = new LinkedNode(1),
+				node3 = new LinkedNode(1),
+				node4 = new LinkedNode(1);
+			list1.head = node1;
+			node1.next = node2;
+			node2.next = node3;
+			node3.next = node4;
+			console.log("list1:");
+			list1.print();
+			var list2 = new LinkedList(),
+				node21 = new LinkedNode(1),
+				node22 = new LinkedNode(2),
+				node23 = new LinkedNode(6),
+				node24 = new LinkedNode(8);
+			list2.head = node21;
+			node21.next = node22;
+			node22.next = node23;
+			node23.next = node24;
+			console.log("list2:");
+			list2.print();
+			console.log("list1和list2合并之后的链表:");
+			concatOrderedList(list1, list2).print();
+			list1 = new LinkedList();
+			node1 = new LinkedNode(1);
+			node2 = new LinkedNode(3);
+			node3 = new LinkedNode(5);
+			node4 = new LinkedNode(7);
+			list1.head = node1;
+			node1.next = node2;
+			node2.next = node3;
+			node3.next = node4;
+			var list3 = new LinkedList();
+			console.log("list3:");
+			list3.print();
+			console.log("list1和list3合并之后的链表:");
+			concatOrderedList(list1, list3).print();
+		};
+		document.querySelector("#in-18").onclick = function() {
+			var tree1 = new BinaryTree(),
+				node1 = new TreeNode(2),
+				node2 = new TreeNode(6),
+				node3 = new TreeNode(3),
+				node4 = new TreeNode(2),
+				node5 = new TreeNode(7),
+				node6 = new TreeNode(4),
+				node7 = new TreeNode(5);
+			tree1.root = node1;
+			node1.left = node2;
+			node1.right = node3;
+			node2.left = node4;
+			node2.right = node5;
+			node4.left = node6;
+			node4.right = node7;
+			var tree2 = new BinaryTree(),
+				node21 = new TreeNode(2),
+				node22 = new TreeNode(4),
+				node23 = new TreeNode(5);
+			tree2.root = node21;
+			node21.left = node22;
+			node21.right = node23;
+			console.log(containSubTree(tree1, tree2));
+		};
+		document.querySelector("#in-19").onclick = function() {
+			var tree1 = new BinaryTree(),
+				node1 = new TreeNode(6),
+				node2 = new TreeNode(8),
+				node3 = new TreeNode(5),
+				node4 = new TreeNode(7),
+				node5 = new TreeNode(3),
+				node6 = new TreeNode(4),
+				node7 = new TreeNode(2);
+			tree1.root = node1;
+			node1.left = node2;
+			node1.right = node3;
+			node2.left = node4;
+			node2.right = node5;
+			node3.left = node6;
+			node3.right = node7;
+			console.log(getMirrorTree(tree1));
+			var tree2 = new BinaryTree(),
+				node21 = new TreeNode(6),
+				node22 = new TreeNode(5),
+				node23 = new TreeNode(8);
+			tree2.root = node21;
+			node21.left = node22;
+			node22.left = node23;
+			console.log(getMirrorTree(tree2));
+			var tree3 = new BinaryTree();
+			console.log(getMirrorTree(tree3));
+			var tree4 = new BinaryTree(),
+				node41 = new TreeNode(1);
+			tree4.root = node41;
+			console.log(getMirrorTree(tree4));
+		};
+		document.querySelector("#in-20").onclick = function() {
+			var matrix1 = [[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]];
+			console.log(printClockwise(matrix1));
+			var matrix2 = [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]];
+			console.log(printClockwise(matrix2));
+			var matrix3 = [[1],[2],[3],[4]];
+			console.log(printClockwise(matrix3));
+			var matrix4 = [[1]];
+			console.log(printClockwise(matrix4));
+			var matrix5 = [[]];
+			console.log(printClockwise(matrix5));
+			var matrix6 = [];
+			console.log(printClockwise(matrix6));
+			var matrix7 = [[1,2,3,4,5],[6,7,8,9],[11,12,13,14,15]];
+			console.log(printClockwise(matrix7));
+		};
+		document.querySelector("#in-21").onclick = function() {
+			var stackMin = new StackWithMin();
+			stackMin.push(5);
+			console.log(stackMin.min());
+			stackMin.push(4);
+			console.log(stackMin.min());
+			stackMin.push(6);
+			console.log(stackMin.min());
+			stackMin.pop();
+			console.log(stackMin.min());
+			stackMin.pop();
+			console.log(stackMin.min());
+		};
+		document.querySelector("#in-22").onclick = function() {
+			console.log(inFixesOut([1,2,3,4,5],[4,5,3,2,1]));
+			console.log(inFixesOut([1,2,3,4,5],[3,4,5,2,1]));
+			console.log(inFixesOut([1,2,3,4,5],[2,5,3,4,1]));
+			console.log(inFixesOut([1],[1]));
+			console.log(inFixesOut([1,2,3,4,5],[4,5,3,2]));
+		};
+		document.querySelector("#in-23").onclick = function() {
+			var tree1 = new BinaryTree(),
+				node1 = new TreeNode(8),
+				node2 = new TreeNode(6),
+				node3 = new TreeNode(10),
+				node4 = new TreeNode(5),
+				node5 = new TreeNode(7),
+				node6 = new TreeNode(9),
+				node7 = new TreeNode(11);
+			tree1.root = node1;
+			node1.left = node2;
+			node1.right = node3;
+			node2.left = node4;
+			node2.right = node5;
+			node3.left = node6;
+			node3.right = node7;
+			console.log(printTopToButt(tree1));
+			var tree2 = new BinaryTree();
+			console.log(printTopToButt(tree2));
+			var tree3 = new BinaryTree(),
+				node31 = new TreeNode(8),
+				node32 = new TreeNode(6),
+				node33 = new TreeNode(10),
+				node34 = new TreeNode(5),
+				node36 = new TreeNode(9);
+			tree3.root = node31;
+			node31.left = node32;
+			node31.right = node33;
+			node32.left = node34;
+			node33.left = node36;
+			console.log(printTopToButt(tree3));
+		};
+		document.querySelector("#in-24").onclick = function() {
+			console.log("[5,7,6,9,11,10,8]是二叉搜索树的后续遍历序列吗：",isPostOrder([5,7,6,9,11,10,8]));
+			console.log("[5,9,6,7,11,10,8]是二叉搜索树的后续遍历序列吗：",isPostOrder([5,9,6,7,11,10,8]));
+			console.log("[5]是二叉搜索树的后续遍历序列吗：",isPostOrder([5]));
+			console.log("[]是二叉搜索树的后续遍历序列吗：",isPostOrder([]));
+			console.log("[5,9]是二叉搜索树的后续遍历序列吗：",isPostOrder([5,9]));
+			console.log("[9,5]是二叉搜索树的后续遍历序列吗：",isPostOrder([9,5]));
+		};
+		document.querySelector("#in-25").onclick = function() {
+			var tree1 = new BinaryTree(),
+				node1 = new TreeNode(1),
+				node2 = new TreeNode(3),
+				node3 = new TreeNode(2),
+				node4 = new TreeNode(4),
+				node5 = new TreeNode(5),
+				node6 = new TreeNode(6),
+				node7 = new TreeNode(7);
+			tree1.root = node1;
+			node1.left = node2;
+			node1.right = node3;
+			node2.left = node4;
+			node2.right = node5;
+			node3.left = node6;
+			node3.right = node7;
+			console.log("和为8的路径：",printPathSumEqual(tree1, 8));
+			console.log("和为9的路径：",printPathSumEqual(tree1, 9));
+			console.log("和为10的路径：",printPathSumEqual(tree1, 10));
+			console.log("和为12的路径：",printPathSumEqual(tree1, 12));
+		};
+		document.querySelector("#in-26").onclick = function() {
+			var list1 = new LinkedList(),
+				node1 = new ComplexLinkedNode(1),
+				node2 = new ComplexLinkedNode(2),
+				node3 = new ComplexLinkedNode(3),
+				node4 = new ComplexLinkedNode(4);
+			list1.head = node1;
+			node1.next = node2;
+			node1.sibling = node3;
+			node2.next = node3;
+			node3.next = node4;
+			node3.sibling = node2;
+			list1.print();
+			console.log(copyComlexList(list1));
+			var list2 = new LinkedList();
+			list2.print();
+			console.log(copyComlexList(list2));
+		};
+		document.querySelector("#in-27").onclick = function() {
+			var tree1 = new BinaryTree(),
+				node1 = new TreeNode(10),
+				node2 = new TreeNode(6),
+				node3 = new TreeNode(14),
+				node4 = new TreeNode(4),
+				node5 = new TreeNode(8),
+				node6 = new TreeNode(12),
+				node7 = new TreeNode(16);
+			tree1.root = node1;
+			node1.left = node2;
+			node1.right = node3;
+			node2.left = node4;
+			node2.right = node5;
+			node3.left = node6;
+			node3.right = node7;
+			console.log(BST2List(tree1));
+		};
+		document.querySelector("#in-28").onclick = function() {
+			console.log(getAllSequence("1234"));
+		};
+		document.querySelector("#in-29-1").onclick = function() {
+			console.log(findMoreThanHalf([1,2,3,5,2,2,2]));
+			console.log(findMoreThanHalf([1,2,3,5,2,3,3]));
+			console.log(findMoreThanHalf([1,3,3,5,2,3,3]));
+			console.log(findMoreThanHalf([2,3,3,2,2,2,3]));
+			console.log(findMoreThanHalf([1,1,2,2,2,3,3]));
+			console.log(findMoreThanHalf([]));
+			console.log(findMoreThanHalf([2]));
+		};
+		document.querySelector("#in-29-2").onclick = function() {
+			console.log(findMoreThanHalf2([1,2,3,5,2,2,2]));
+			console.log(findMoreThanHalf2([1,2,3,5,2,3,3]));
+			console.log(findMoreThanHalf2([1,3,3,5,2,3,3]));
+			console.log(findMoreThanHalf2([2,3,3,2,2,2,3]));
+			console.log(findMoreThanHalf2([1,1,2,2,2,3,3]));
+			console.log(findMoreThanHalf2([]));
+			console.log(findMoreThanHalf2([2]));
+		};
+		document.querySelector("#in-30").onclick = function() {
+			console.log(getSmallestK([3,5,6,2,1,8,7,4], 4));
+			console.log(getSmallestK([3,5,6,2,1,8,7,4], 6));
+			console.log(getSmallestK([3,5,6,2,1,8,7,4], 8));
+			console.log(getSmallestK([3,5,6,2,1,8,7,4], 9));
+			console.log(getSmallestK([3,5,6,2,1,8,7,4], 0));
+			console.log(getSmallestK([3,5,6,2,1,8,7,4], 1));
+			console.log(getSmallestK([1,1,1,1], 2));
+		};
+		document.querySelector("#in-31").onclick = function() {
+			console.log(findMaxSum([-3, 2, 4, -1, 6, 5]));
+			console.log(findMaxSum([1]));
+			console.log(findMaxSum([]));
+			console.log(findMaxSum([-2,-3,-5,-1]));
+			console.log(findMaxSum([1,-2,3,10,-4,7,2,-5]));
+		};
+		document.querySelector("#in-32").onclick = function() {
+			console.log(getNumOfOnes(12));
+			console.log(getNumOfOnes(1));
+			console.log(getNumOfOnes(0));
+			console.log(getNumOfOnes(100));
+			console.log(getNumOfOnes(100000));
+		};
+		document.querySelector("#in-33").onclick = function() {
+			console.log(getMinCombination([1,12,123]));
+			console.log(getMinCombination([3,32,321]));
+			console.log(getMinCombination([4,5,1,3,2]));
+			console.log(getMinCombination([]));
+			console.log(getMinCombination([1]));
+		};
+		document.querySelector("#in-33").onclick = function() {
+			console.log(getMinCombination([1,12,123]));
+			console.log(getMinCombination([3,32,321]));
+			console.log(getMinCombination([4,5,1,3,2]));
+			console.log(getMinCombination([]));
+			console.log(getMinCombination([1]));
+		};
+		document.querySelector("#in-34").onclick = function() {
+			console.log(getUglyNumberOn(0));
+			console.log(getUglyNumberOn(1));
+			console.log(getUglyNumberOn(2));
+			console.log(getUglyNumberOn(3));
+			console.log(getUglyNumberOn(4));
+			console.log(getUglyNumberOn(5));
+			console.log(getUglyNumberOn(6));
+			console.log(getUglyNumberOn(7));
+			console.log(getUglyNumberOn(1500));
+		};
+		document.querySelector("#in-35").onclick = function() {
+			console.log(findFirstShowOnce("abaccdebad"));
+			console.log(findFirstShowOnce("abaccdebade"));
+			console.log(findFirstShowOnce("abcde"));
+			console.log(findFirstShowOnce("abcdea"));
+			console.log(findFirstShowOnce(" "));
+		};
+		document.querySelector("#in-36").onclick = function() {
+			console.log(getNumOfInversePair([7,5,6,8,4]));
+			console.log(getNumOfInversePair([7,4]));
+			console.log(getNumOfInversePair([7,8]));
+			console.log(getNumOfInversePair([1]));
+			console.log(getNumOfInversePair([]));
+		};
+		document.querySelector("#in-37").onclick = function() {
+			var list1 = new LinkedList(),
+				node11 = new LinkedNode(1),
+				node12 = new LinkedNode(2),
+				node13 = new LinkedNode(3),
+				node6 = new LinkedNode(6),
+				node7 = new LinkedNode(7);
+			list1.head = node11;
+			node11.next = node12;
+			node12.next = node13;
+			node13.next = node6;
+			node6.next = node7;
+
+			var list2 = new LinkedList(),
+				node21 = new LinkedNode(4),
+				node22 = new LinkedNode(5);
+			list2.head = node21;
+			node21.next = node22;
+			node22.next = node6;
+
+			console.log(getFirstSameNode(list1, list2));
+		};
+		document.querySelector("#in-38").onclick = function() {
+			console.log(getNumOfValue([1,2,3,3,3,3,5,8], 3));
+			console.log(getNumOfValue([3,3,3,3,5,8], 3));
+			console.log(getNumOfValue([1,3,3,3,3], 3));
+			console.log(getNumOfValue([3,3,3,3], 3));
+			console.log(getNumOfValue([3], 3));
+			console.log(getNumOfValue([3], 2));
+			console.log(getNumOfValue([], 3));
+		};
+		document.querySelector("#in-39").onclick = function() {
+			var tree1 = new BinaryTree(),
+				node1 = new TreeNode(1),
+				node2 = new TreeNode(8),
+				node3 = new TreeNode(5),
+				node4 = new TreeNode(7),
+				node5 = new TreeNode(3),
+				node6 = new TreeNode(4),
+				node7 = new TreeNode(2),
+				node8 = new TreeNode(2);
+			tree1.root = node1;
+			node1.left = node2;
+			node1.right = node3;
+			node2.left = node4;
+			node2.right = node5;
+			node3.left = node6;
+			node3.right = node7;
+			node4.left = node8;
+			console.log(depthOfATree1(tree1));
+			console.log(depthOfATree2(tree1));
+			console.log(isBalancedTree(tree1));
+		};
+		document.querySelector("#in-40").onclick = function() {
+			console.log(getSingleNumbers([2,4,3,6,3,2,5,5]));
+			console.log(getSingleNumbers([2,4,3,6,3,2]));
+			console.log(getSingleNumbers([4,6]));
+			console.log(getSingleNumbers([4,6,2,3,3,2,5,1,5,1]));
+		};
+		document.querySelector("#in-41").onclick = function() {
+			console.log(findTwoNumbersSum([1,2,4,7,11,15], 15));
+			console.log(findTwoNumbersSum([4,11], 15));
+			console.log(findTwoNumbersSum([1,2,4,7,11,15], 10));
+			console.log(findTwoNumbersSum([1,2,4,7,11,15], 15.1));
+			console.log(findTwoNumbersSum([1], 15));
+			console.log(findSequenceSum(15));
+			console.log(findSequenceSum(10));
+			console.log(findSequenceSum(0));
+			console.log(findSequenceSum(1));
+			console.log(findSequenceSum(2));
+			console.log(findSequenceSum(100));
+		};
+		document.querySelector("#in-42").onclick = function() {
+			console.log(leftShiftString("abcdefg", 2));
+			console.log(leftShiftString("abcdefg", 5));
+			console.log(leftShiftString("abcdefg", 10));
+			console.log(leftShiftString("abcdefg", 0));
+			console.log(leftShiftString("", 2));
+			console.log(leftShiftString("ab", 1));
+		};
+		document.querySelector("#in-43").onclick = function() {
+			console.log(getSumAndProbability(1));
+			console.log(getSumAndProbability(2));
+			console.log(getSumAndProbability(8));
+			console.log(getSumAndProbability(9));
+		};
+		document.querySelector("#in-44").onclick = function() {
+			console.log(ifSuccessive([0,0,1,3,5]));
+			console.log(ifSuccessive([0,0,0,3,5]));
+			console.log(ifSuccessive([0,0,3,3,5]));
+			console.log(ifSuccessive([0,0,3]));
+			console.log(ifSuccessive([4,2,1,3,5]));
+		};
+		document.querySelector("#in-45").onclick = function() {
+			console.log(getTheLastOne(6, 3));
+			console.log(getTheLastOne(5, 3));
+			console.log(getTheLastOne(1, 3));
+			console.log(getTheLastOne(2, 1));
+			console.log(getTheLastOne(8, 1));
+		};
+	};
+	</script>
+</body>
+</html>
