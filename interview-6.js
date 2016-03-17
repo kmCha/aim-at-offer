@@ -3,7 +3,7 @@ function rebuildBT(preOrder, inOrder) {
 		return console.log("输入两个长度相同的数组");
 	}
 	var tree = new BinaryTree(),
-		root = new TreeNode();
+		root = new TreeNode(),
 		rebuildSub = function(preOrder, inOrder, root) {
 			if(preOrder.length > 1 && preOrder.length === inOrder.length) {
 				var head = preOrder[0],

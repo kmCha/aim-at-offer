@@ -1,7 +1,7 @@
 function deleteNode(list, node) {
 	var oldValue,
 		head = list.head;
-	console.log(head === node);
+	// console.log(head === node);
 	if(head === null) {
 		throw new Error("链表头指针不能为空");
 	}

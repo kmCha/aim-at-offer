@@ -2,8 +2,6 @@ var fib_recursive = function() {	// 斐波那契数列递归写法
 	var cache = {};
 	return function(n) {
 		if(n < 0) return "必须输入非负数";
-		if(cache[n]) return cache[n];
-		cache[n] = cal(n);
 		return cal(n);
 		function cal(n) {
 			if(n === 0) return 0;
