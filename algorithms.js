@@ -103,5 +103,5 @@ function addThousandIdentifier(str) {
 	if(typeof str === "number") {
 		str = str + "";
 	}
-	return str.replace(/(?=((?!\s)\d{3})+$)/g, ",");
+	return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, "$1,");
 }
