@@ -105,3 +105,27 @@ function addThousandIdentifier(str) {	// 添加千分符
 	}
 	return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, "$1,");
 }
+
+function generateGrey(N) {		// 生成格雷码
+	if(typeof N !== "number" || N % 1 !== 0 || N < 1) {
+		return "请输入大于0的整数";
+	}
+	return getGery(N);
+
+	function getGery(N) {
+		if(N === 1) {
+			return ["0", "1"];
+		}
+		else {
+			var lastArr = getGery(N - 1);
+			return addToTail(lastArr, "0").concat(addToTail(lastArr.reverse(), "1"));
+		}
+	}
+	function addToTail(arr, str) {
+		var ret = [];
+		for(var i = 0; i < arr.length; i++) {
+			ret[i] = arr[i].concat(str);
+		}
+		return ret;
+	}
+}
