@@ -86,7 +86,7 @@ function addRecursively(n) {	// 1+2+3+...+n
 	return n + addRecursively(n-1);
 }
 
-function dec2Bin(num) {
+function dec2Bin(num) {		// 十进制到二进制转换
 	var result = [],
 		remain,
 		i,
@@ -99,7 +99,7 @@ function dec2Bin(num) {
 	console.log(result);
 }
 
-function addThousandIdentifier(str) {
+function addThousandIdentifier(str) {	// 添加千分符
 	if(typeof str === "number") {
 		str = str + "";
 	}
