@@ -5,7 +5,7 @@ function getAllSequence(str) {
 	if(str.length === 0) {
 		return "字符串不能为空";
 	}
-	var result = [],
+	var result = "",
 		l = str.length,
 		index = 0,
 		used = {},
@@ -18,15 +18,15 @@ function getAllSequence(str) {
 			for(var i = 0; i < l; i++) {
 				if(!used[str[i]]) {
 					used[str[i]] = true;
-					result.push(str[i]);
+					result = result.concat(str[i]);
 					fill(index + 1);
-					result.pop();
+					result = result.substring(0, index);
 					used[str[i]] = false;
 				}
 			}
 		}
 		else {
-			ret.push(result.join(""));
+			ret.push(result);
 		}
 	}
 }
